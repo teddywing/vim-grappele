@@ -4,7 +4,7 @@ endif
 let g:loaded_grappele = 1
 
 
-nnoremap <Plug>Grappele :<c-u>call grappele#Grappele()<cr>
+nnoremap <Plug>Grappele :<c-u>call grappele#Grappele(v:count)<cr>
 
 if !hasmapto('<Plug>Grappele') || !maparg('G', 'n')
 	nmap G <Plug>Grappele
