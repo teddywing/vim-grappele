@@ -1,5 +1,6 @@
 function! grappele#Grappele(line)
 	let l:current_buffer = 0
+	let s:line = a:line
 	let l:column_position = 0
 	let l:column_offset = 0
 	
@@ -14,4 +15,8 @@ function! grappele#Grappele(line)
 			\ l:column_offset
 		\ ])
 	endif
+endfunction
+
+function! grappele#Recall()
+	call grappele#Grappele(s:line)
 endfunction
