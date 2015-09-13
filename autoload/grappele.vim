@@ -1,0 +1,2 @@
+function! grappele#Grappele()
+endfunction
