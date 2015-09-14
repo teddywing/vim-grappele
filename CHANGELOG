@@ -1,0 +1,7 @@
+CHANGELOG
+=========
+
+v0.0.1 (2015-09-14):
+	* Initial release
+	* Custom `G` command that stores the most recent count passed to it
+	* `gG` command that does `G` with the most recent `G` count
