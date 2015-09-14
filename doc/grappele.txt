@@ -1,0 +1,31 @@
+*grappele.txt*	Recall the last G movement
+
+Author:  Teddy Wing <http://teddywing.com>
+License: MIT
+Version: 0.0.1
+
+==============================================================================
+INTRODUCTION                                           *grappele-introduction*
+
+Grappele saves your last |G| movement and provides a way to easily repeat it.
+I often find myself typing `278G` for example only to realise that I'm in the
+wrong window. I'll then have to switch to the window I was originally looking
+at and type `278G` again. With Grappele, I can use |G| normally and if I mess
+up, the last |G| command can be quickly repeated with a mapping.
+
+==============================================================================
+MAPPINGS                                                   *grappele-mappings*
+
+							*grappele-G*
+G			Same as Vim's standard |G|. Stores the count of its
+			most recent use.
+
+							*gG*
+gG			Go to the line specified by the most recent use of |G|
+
+==============================================================================
+LICENSE                                                     *grappele-license*
+
+Grappele is released under the MIT license.
+
+ vim:tw=78:ts=8:ft=help:norl:
