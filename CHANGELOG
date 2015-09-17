@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+v0.0.2 (2015-09-16):
+	* Make `G` command `<silent>`
+
 v0.0.1 (2015-09-14):
 	* Initial release
 	* Custom `G` command that stores the most recent count passed to it
