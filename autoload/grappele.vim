@@ -1,6 +1,5 @@
 function! grappele#Grappele(line)
 	let l:current_buffer = 0
-	let s:line = a:line
 	let l:column_position = 0
 	let l:column_offset = 0
 	
@@ -10,6 +9,8 @@ function! grappele#Grappele(line)
 		" Go to the end of the buffer
 		$
 	else
+		let s:line = a:line
+
 		call setpos('.', [
 			\ l:current_buffer,
 			\ a:line,
