@@ -21,5 +21,7 @@ function! grappele#Grappele(line)
 endfunction
 
 function! grappele#Recall()
-	call grappele#Grappele(s:line)
+	if exists('s:line')
+		call grappele#Grappele(s:line)
+	endif
 endfunction
