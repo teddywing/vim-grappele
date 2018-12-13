@@ -5,7 +5,9 @@ let g:loaded_grappele = 1
 
 
 nnoremap <silent> <Plug>Grappele :<c-u>call grappele#Grappele(v:count)<cr>
-nnoremap <silent> <Plug>GrappeleRecall :<c-u>call grappele#Recall()<cr>
+nnoremap <silent> <Plug>GrappeleRecall :<c-u>call grappele#Recall('n')<cr>
+vnoremap <silent> <Plug>GrappeleRecall :<c-u>call grappele#Recall('v')<cr>
+onoremap <silent> <Plug>GrappeleRecall :<c-u>call grappele#Recall('o')<cr>
 
 if !hasmapto('<Plug>Grappele') || !maparg('G', 'n')
 	nnoremap <silent> G :<c-u>call grappele#Grappele(v:count)<cr>
@@ -13,4 +15,12 @@ endif
 
 if !hasmapto('<Plug>GrappeleRecall') || !maparg('gG', 'n')
 	nmap gG <Plug>GrappeleRecall
+endif
+
+if !hasmapto('<Plug>GrappeleRecall') || !maparg('gG', 'v')
+	vmap gG <Plug>GrappeleRecall
+endif
+
+if !hasmapto('<Plug>GrappeleRecall') || !maparg('gG', 'o')
+	omap gG <Plug>GrappeleRecall
 endif

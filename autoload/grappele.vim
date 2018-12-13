@@ -1,10 +1,16 @@
-function! grappele#Grappele(line)
+function! grappele#Grappele(line, ...)
 	let l:current_buffer = 0
 	let l:column_position = 0
 	let l:column_offset = 0
-	
+
+	let l:mode = get(a:, 1, '')
+
 	normal! m'
-	
+
+	if l:mode ==# 'v'
+		normal! V
+	endif
+
 	if a:line ==# 0
 		" Go to the end of the buffer
 		$
@@ -20,8 +26,8 @@ function! grappele#Grappele(line)
 	endif
 endfunction
 
-function! grappele#Recall()
+function! grappele#Recall(mode)
 	if exists('s:line')
-		call grappele#Grappele(s:line)
+		call grappele#Grappele(s:line, a:mode)
 	endif
 endfunction
