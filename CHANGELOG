@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+v0.1.0 (2018-12-13):
+	* Relicense under the GNU GPLv3+
+	* Add visual and operator-pending mode mappings
+
 v0.0.5 (2017-12-20):
 	* If no location has been saved yet, `gG` no longer produces an error
 

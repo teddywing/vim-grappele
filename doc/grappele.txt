@@ -2,7 +2,7 @@
 
 Author:  Teddy Wing <http://teddywing.com>
 License: GPLv3+
-Version: 0.0.5
+Version: 0.1.0
 
 ==============================================================================
 INTRODUCTION                                           *grappele-introduction*
