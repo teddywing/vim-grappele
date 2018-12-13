@@ -24,4 +24,5 @@ install:
 
 
 ## License
-Licensed under the MIT license. See the included LICENSE file.
+Copyright © 2015–2018 Teddy Wing. Licensed under the GNU GPLv3+ (see the included
+COPYING file).
