@@ -1,7 +1,7 @@
 *grappele.txt*	Recall the last G movement
 
 Author:  Teddy Wing <http://teddywing.com>
-License: MIT
+License: GPLv3+
 Version: 0.0.5
 
 ==============================================================================
@@ -26,6 +26,19 @@ gG			Go to the line specified by the most recent use of |G|
 ==============================================================================
 LICENSE                                                     *grappele-license*
 
-Grappele is released under the MIT license.
+Copyright (c) 2015–2018 Teddy Wing
+
+Grappele is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Grappele is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Grappele. If not, see <https://www.gnu.org/licenses/>.
 
  vim:tw=78:ts=8:ft=help:norl:
