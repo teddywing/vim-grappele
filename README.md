@@ -24,5 +24,5 @@ install:
 
 
 ## License
-Copyright © 2015–2018 Teddy Wing. Licensed under the GNU GPLv3+ (see the included
-COPYING file).
+Copyright © 2015–2018, 2020 Teddy Wing. Licensed under the GNU GPLv3+ (see the
+included COPYING file).

@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+v0.2.0 (2020-09-21):
+	* Add visual and operator-pending mode mappings for `G`
+
 v0.1.0 (2018-12-13):
 	* Relicense under the GNU GPLv3+
 	* Add visual and operator-pending mode mappings

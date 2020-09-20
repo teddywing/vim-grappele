@@ -2,7 +2,7 @@
 
 Author:  Teddy Wing <http://teddywing.com>
 License: GPLv3+
-Version: 0.1.0
+Version: 0.2.0
 
 ==============================================================================
 INTRODUCTION                                           *grappele-introduction*
@@ -26,7 +26,7 @@ gG			Go to the line specified by the most recent use of |G|
 ==============================================================================
 LICENSE                                                     *grappele-license*
 
-Copyright (c) 2015–2018 Teddy Wing
+Copyright (c) 2015–2018, 2020 Teddy Wing
 
 Grappele is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
