@@ -44,13 +44,20 @@ function! grappele#Recall(mode)
 
 		let l:line = s:line
 
-		if a:mode ==# 'o'
+		" if a:mode ==# 'o'
 			" let l:line += 1
-		elseif a:mode ==# 'v'
+			" return ':normal! V' . l:line . "G\<cr>"
+		if a:mode ==# 'v'
 			let l:line = visualmode() . l:line
 		endif
 
-		echom 'Recall: ' . l:line
+		" echom 'Recall: ' . l:line
 		execute 'normal! ' . l:line . 'G'
+	endif
+endfunction
+
+function! grappele#ORecall()
+	if exists('s:line')
+		return ':normal! V' . s:line . "G\<cr>"
 	endif
 endfunction
