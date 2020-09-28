@@ -20,14 +20,14 @@ if !maparg('G', 'o')
 	onoremap <silent> <expr> G grappele#Grappele(v:count)
 endif
 
-if !hasmapto('<Plug>GrappeleRecall') || !maparg('gG', 'n')
+if !hasmapto('<Plug>GrappeleRecall', 'n') || !maparg('gG', 'n')
 	nmap gG <Plug>GrappeleRecall
 endif
 
-if !hasmapto('<Plug>GrappeleRecall') || !maparg('gG', 'v')
+if !hasmapto('<Plug>GrappeleRecall', 'v') || !maparg('gG', 'v')
 	vmap gG <Plug>GrappeleRecall
 endif
 
-if !hasmapto('<Plug>GrappeleRecall') || !maparg('gG', 'o')
+if !hasmapto('<Plug>GrappeleRecall', 'o') || !maparg('gG', 'o')
 	omap gG <Plug>GrappeleRecall
 endif
