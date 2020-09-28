@@ -10,10 +10,14 @@ function! grappele#Recall()
 	if exists('s:line')
 		return s:line . 'G'
 	endif
+
+	return ''
 endfunction
 
 function! grappele#ORecall()
 	if exists('s:line')
 		return ':normal! V' . s:line . "G\<cr>"
 	endif
+
+	return "\<C-c>"
 endfunction
