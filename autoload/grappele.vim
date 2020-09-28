@@ -6,15 +6,9 @@ function! grappele#Grappele(line)
 	return 'G'
 endfunction
 
-function! grappele#Recall(mode)
+function! grappele#Recall()
 	if exists('s:line')
-		let l:line = s:line
-
-		if a:mode ==# 'v'
-			let l:line = visualmode() . l:line
-		endif
-
-		return l:line . 'G'
+		return s:line . 'G'
 	endif
 endfunction
 

@@ -4,8 +4,8 @@ endif
 let g:loaded_grappele = 1
 
 
-nnoremap <silent> <expr> <Plug>GrappeleRecall grappele#Recall('n')
-vnoremap <silent> <expr> <Plug>GrappeleRecall grappele#Recall('v')
+nnoremap <silent> <expr> <Plug>GrappeleRecall grappele#Recall()
+vnoremap <silent> <expr> <Plug>GrappeleRecall grappele#Recall()
 onoremap <silent> <expr> <Plug>GrappeleRecall grappele#ORecall()
 
 if !maparg('G', 'n')
