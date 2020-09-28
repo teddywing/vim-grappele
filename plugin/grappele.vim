@@ -10,16 +10,15 @@ vnoremap <silent> <expr> <Plug>GrappeleRecall grappele#Recall('v')
 onoremap <silent> <expr> <Plug>GrappeleRecall grappele#ORecall()
 
 if !hasmapto('<Plug>Grappele') || !maparg('G', 'n')
-	nnoremap <silent> <expr> G grappele#Grappele(v:count, 'n')
+	nnoremap <silent> <expr> G grappele#Grappele(v:count)
 endif
 
 if !hasmapto('<Plug>Grappele') || !maparg('G', 'v')
-	vnoremap <silent> <expr> G
-		\ grappele#Grappele(v:count, 'v', visualmode())
+	vnoremap <silent> <expr> G grappele#Grappele(v:count)
 endif
 
 if !hasmapto('<Plug>Grappele') || !maparg('G', 'o')
-	onoremap <silent> <expr> G grappele#Grappele(v:count, 'o')
+	onoremap <silent> <expr> G grappele#Grappele(v:count)
 endif
 
 if !hasmapto('<Plug>GrappeleRecall') || !maparg('gG', 'n')
