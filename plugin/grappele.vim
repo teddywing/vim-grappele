@@ -4,20 +4,19 @@ endif
 let g:loaded_grappele = 1
 
 
-nnoremap <silent> <Plug>Grappele grappele#Grappele(v:count, 'n')
 nnoremap <silent> <expr> <Plug>GrappeleRecall grappele#Recall('n')
 vnoremap <silent> <expr> <Plug>GrappeleRecall grappele#Recall('v')
 onoremap <silent> <expr> <Plug>GrappeleRecall grappele#ORecall()
 
-if !hasmapto('<Plug>Grappele') || !maparg('G', 'n')
+if !maparg('G', 'n')
 	nnoremap <silent> <expr> G grappele#Grappele(v:count)
 endif
 
-if !hasmapto('<Plug>Grappele') || !maparg('G', 'v')
+if !maparg('G', 'v')
 	vnoremap <silent> <expr> G grappele#Grappele(v:count)
 endif
 
-if !hasmapto('<Plug>Grappele') || !maparg('G', 'o')
+if !maparg('G', 'o')
 	onoremap <silent> <expr> G grappele#Grappele(v:count)
 endif
 
