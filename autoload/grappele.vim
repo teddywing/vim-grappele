@@ -14,7 +14,7 @@ function! grappele#Recall(mode)
 			let l:line = visualmode() . l:line
 		endif
 
-		execute 'normal! ' . l:line . 'G'
+		return l:line . 'G'
 	endif
 endfunction
 
