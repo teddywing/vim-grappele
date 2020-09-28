@@ -1,6 +1,4 @@
 function! grappele#Grappele(line, ...)
-	let l:line = ''
-
 	if a:line !=# 0
 		let s:line = a:line
 	endif
