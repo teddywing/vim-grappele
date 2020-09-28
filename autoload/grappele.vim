@@ -1,36 +1,23 @@
-function! grappele#Grappele(line, ...)
-	let l:current_buffer = 0
-	let l:column_position = 0
-	let l:column_offset = 0
-
-	let l:mode = get(a:, 1, '')
-	let l:visualmode = get(a:, 2, '')
-
-	normal! m'
-
-	if l:mode ==# 'v'
-		execute 'normal! ' . l:visualmode
-	elseif l:mode ==# 'o'
-		normal! V
-	endif
-
-	if a:line ==# 0
-		" Go to the end of the buffer
-		$
-	else
+function! grappele#Grappele(line)
+	if a:line !=# 0
 		let s:line = a:line
-
-		call setpos('.', [
-			\ l:current_buffer,
-			\ a:line,
-			\ l:column_position,
-			\ l:column_offset
-		\ ])
 	endif
+
+	return 'G'
 endfunction
 
-function! grappele#Recall(mode)
+function! grappele#Recall()
 	if exists('s:line')
-		call grappele#Grappele(s:line, a:mode, visualmode())
+		return s:line . 'G'
 	endif
+
+	return ''
+endfunction
+
+function! grappele#ORecall()
+	if exists('s:line')
+		return ':normal! V' . s:line . "G\<cr>"
+	endif
+
+	return "\<C-c>"
 endfunction
