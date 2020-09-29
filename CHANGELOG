@@ -1,6 +1,15 @@
 CHANGELOG
 =========
 
+v0.3.0 (2020-09-29):
+	* Fix bug with `o_G` where `>17G` caused lines .,17 to be indented 17 times
+	* Make all mappings `<expr>` mappings
+	* Remove the `<Plug>Grappele` mapping
+	* Remove variadic arguments from `grappele#Grappele()` and make it an
+	  `<expr>` function
+	* Remove `mode` argument from `grappele#Recall()` and make it an `<expr>`
+	  function
+
 v0.2.0 (2020-09-21):
 	* Add visual and operator-pending mode mappings for `G`
 
@@ -24,3 +33,5 @@ v0.0.1 (2015-09-14):
 	* Initial release
 	* Custom `G` command that stores the most recent count passed to it
 	* `gG` command that does `G` with the most recent `G` count
+
+ vim:tw=80:comments=:fo+=n:formatlistpat=^\\s*\\*\\s*
